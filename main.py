@@ -1,3 +1,5 @@
+#обработчик анкет: точка входа
+
 from validators import parsLine
 from report import printTable, printBad, printStat
 from storage import readLines, saveFiles, OK_FILE, ERR_FILE
@@ -32,4 +34,5 @@ def main():
     print(f"\nСохранено: {OK_FILE} и {ERR_FILE}")
 
 
-main()
+if __name__ == "__main__":
+    main()
