@@ -7,10 +7,19 @@ from storage import readLines, saveFiles, OK_FILE, ERR_FILE
 INPUT_FILE = "data/anketa.txt"
 
 
+def askInputFile():
+    """спрашивает имя входного файла. Пустой ввод - файл по умолчанию"""
+    name = input(f"Имя входного файла [{INPUT_FILE}]: ").strip()
+    if name == "":
+        return INPUT_FILE
+    return name
+
+
 def main():
-    lines = readLines(INPUT_FILE)
+    filename = askInputFile()
+    lines = readLines(filename)
     if lines is None:
-        print("Файл", INPUT_FILE, "не найден. Он должен лежать в data/")
+        print("Файл", filename, "не найден")
         return
     good = []
     bad = []
