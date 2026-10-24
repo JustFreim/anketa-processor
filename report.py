@@ -46,7 +46,7 @@ def printStat(total, empty, good, bad):
 
 
 if __name__ == "__main__":
-    #проверка модуля при прямом запуске: python report.py
+    #проверка модуля при прямом запуске python report.py
     demo = [{"fio": "Иванов Иван Петрович", "mail": "ivanov@mail.ru",
              "phone": "+7 (921) 111-22-33", "group": "09с33"}]
     printTable(demo)

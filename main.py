@@ -4,13 +4,13 @@ from validators import parsLine
 from report import printTable, printBad, printStat
 from storage import readLines, saveFiles, OK_FILE, ERR_FILE
 
-INPUT_FILE = "anketa.txt"
+INPUT_FILE = "data/anketa.txt"
 
 
 def main():
     lines = readLines(INPUT_FILE)
     if lines is None:
-        print("Файл", INPUT_FILE, "не найден. Он должен быть рядом с main.py")
+        print("Файл", INPUT_FILE, "не найден. Он должен лежать в data/")
         return
     good = []
     bad = []

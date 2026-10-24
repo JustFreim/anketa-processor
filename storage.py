@@ -25,7 +25,7 @@ def saveFiles(good, bad):
 
 if __name__ == "__main__":
     #проверка модуля при прямом запуске python storage.py
-    lines = readLines("anketa.txt")
+    lines = readLines("data/anketa.txt")
     if lines is None:
         print("Файл не найден")
     else:
